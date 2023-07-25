@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner read = new Scanner(System.in);
+        System.out.println("Enter first num ");
+        double num1 = read.nextDouble();
+        System.out.println("Enter second num ");
+        double num2 = read.nextDouble();
+        double plus, subtract, div, multi;
+        System.out.println("Enter the operation you want (+ - / *) ");
+        String operation = read.next();
+        if (operation.equals("+") ){
+            plus = num1 + num2;
+            System.out.println("plus = "+plus);
+        } else if (operation.equals("-")) {
+            subtract = num1 - num2;
+            System.out.println("subtraction = "+subtract);
+        } else if (operation.equals("/")) {
+            div = num1 / num2;
+            System.out.println("div = "+div);
+        }else if (operation.equals("*")){
+            multi = num1 * num2;
+            System.out.println("multiplication = "+multi);
+        }else {
+            System.out.println("Only you can choose from this operation + - / *");
+        }
+
+    }
+}
